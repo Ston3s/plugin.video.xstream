@@ -35,7 +35,7 @@ def checkforupdates():
     logger.info("xStream checkforupdates")
 
     if cConfig().getSetting('UpdateSetting') == "Nightly":
-        nightlycommitsXML = urllib.urlopen("https://api.github.com/repos/StoneOffStones/plugin.video.xstream/commits/nightly").read()
+        nightlycommitsXML = urllib.urlopen("https://api.github.com/repos/xStream-Kodi/plugin.video.xstream/commits/nightly").read()
 
         try:
             if not os.path.exists(LOCAL_NIGHTLY_VERSION) or open(LOCAL_NIGHTLY_VERSION).read() != \
