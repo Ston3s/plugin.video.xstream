@@ -21,7 +21,7 @@ XSTREAM_DIRNAME = os.path.basename(ROOT_DIR)
 ## Remote path to download plugin.zip and version file.
 REMOTE_URL_MASTER = "https://api.github.com/repos/Lynx187/plugin.video.xstream/git/refs/tags/"
 REMOTE_URL_BETA = "https://github.com/Lynx187/plugin.video.xstream/archive/master.zip"
-REMOTE_URL_NIGHTLY = "https://github.com/StoneOffStones/plugin.video.xstream/archive/nightly.zip"
+REMOTE_URL_NIGHTLY = "https://github.com/xStream-Kodi/plugin.video.xstream/archive/nightly.zip"
 
 ## Full path of the remote file version.
 REMOTE_VERSION_FILE_MASTER = "https://raw.githubusercontent.com/Lynx187/plugin.video.xstream/master/addon.xml"
