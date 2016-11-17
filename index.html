@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>xStream by StoneOffStones</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>xStream</h1>
+          <h2>Video Addon für Kodi</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/StoneOffStones/plugin.video.xstream/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/StoneOffStones/plugin.video.xstream/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/StoneOffStones/plugin.video.xstream" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <p><img src="https://github.com/StoneOffStones/plugin.video.xstream/blob/wiki/graphics/website/logo/logo_512.png?raw=true" alt="xStream logo"></p>
+
+<p><a href="https://gitter.im/StoneOffStones/plugin.video.xstream?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/StoneOffStones/plugin.video.xstream.svg" alt="Join the chat at https://gitter.im/StoneOffStones/plugin.video.xstream"></a></p>
+
+<h2>
+<a id="inhaltsverzeichnis" class="anchor" href="#inhaltsverzeichnis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inhaltsverzeichnis</h2>
+
+<ul>
+<li>
+<p><a href="#1-allgemeines-zum-addon">1. Allgemeines zum Addon</a></p>
+
+<ul>
+<li><a href="#11-verf%C3%BCgbare-webseiten">1.1 Verfügbare Webseiten</a></li>
+<li><a href="#12-rechtliche-konsequenzen-bei-nutzung">1.2 Rechtliche Konsequenzen bei Nutzung</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#2-installation-und-konfiguration">2. Installation und Konfiguration</a></p>
+
+<ul>
+<li><a href="#21-bezugsquellen-zur-installation">2.1 Bezugsquellen zur Installation</a></li>
+<li><a href="#22-allgemeine-einstellungen">2.2 Allgemeine Einstellungen</a></li>
+<li><a href="#23-webseiten-aktivieren-und-deaktivieren">2.3 Webseiten Aktivieren und Deaktivieren</a></li>
+<li><a href="#24-manuelle-und-automatische-hosterwahl">2.4 Manuelle und automatische Hosterwahl</a></li>
+<li><a href="#25-funktion-des-metahandlers">2.5 Funktion des Metahandlers</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#3-bekannte-probleme">3. Bekannte Probleme</a></p>
+
+<ul>
+<li><a href="#31-fehler-bei-der-installation">3.1 Fehler bei der Installation</a></li>
+<li><a href="#32-fehler-bei-verwendung-der-globalen-suche">3.2 Fehler bei Verwendung der Globalen Suche</a></li>
+<li><a href="#33-fehler-bei-verwendung-einzelner-webseiten">3.3 Fehler bei Verwendung einzelner Webseiten</a></li>
+<li><a href="#34-fehler-bei-verwendung-einiger-hoster">3.4 Fehler bei Verwendung einiger Hoster</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#4-fehlerbericht-%C3%BCber-log-datei">4. Fehlerbericht über Log-Datei</a></p>
+
+<ul>
+<li><a href="#41-allgemeines-zur-log-datei">4.1 Allgemeines zur Log-Datei</a></li>
+<li><a href="#43-erstellen-bearbeiten-und-hochladen-der-log-datei">4.2 Erstellen, bearbeiten und hochladen der Log-Datei</a></li>
+<li><a href="#42-speicherort-der-log-datei">4.3 Speicherort der Log Datei</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#5-phyton-dateien">5. Phyton Dateien</a></p>
+
+<ul>
+<li><a href="#51-allgemeines-zur-py-datei">5.1 Allgemeines zur .py-Datei</a></li>
+<li><a href="#52-bearbeiten-einer-py-datei">5.2 Bearbeiten einer .py-Datei</a></li>
+<li><a href="#53-speicherort-der-einzelnen-webseiten">5.3 Speicherort der einzelnen Webseiten</a></li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="1-allgemeines-zum-addon" class="anchor" href="#1-allgemeines-zum-addon" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. Allgemeines zum Addon</h2>
+
+<p>xStream ist ein Video Addon für die Media-Center-Software Kodi.
+Mit xStream ist es möglich Serien und Filme unterschiedlichster Streaming-Plattformen über eine simple und optisch ansprechende Benutzeroberfläche zu sehen.</p>
+
+<h3>
+<a id="11-verfügbare-webseiten" class="anchor" href="#11-verf%C3%BCgbare-webseiten" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.1 Verfügbare Webseiten</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Domain</th>
+<th align="left">Status</th>
+<th align="left">Stand</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">AnimeLoads</td>
+<td align="left">anime-loads.org</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">BurningSeries</td>
+<td align="left">bs.to</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">Cine</td>
+<td align="left">cine.to</td>
+<td align="left">funktioniert</td>
+<td align="left">25.05.2016</td>
+</tr>
+<tr>
+<td align="left">CineDream</td>
+<td align="left">cine-dream.net</td>
+<td align="left">funktioniert</td>
+<td align="left">21.06.2016</td>
+</tr>
+<tr>
+<td align="left">Cineplex</td>
+<td align="left">cineplex.tv</td>
+<td align="left">funktioniert</td>
+<td align="left">29.07.2016</td>
+</tr>
+<tr>
+<td align="left">Die Filme</td>
+<td align="left">diefilme.net</td>
+<td align="left">funktioniert</td>
+<td align="left">25.05.2016</td>
+</tr>
+<tr>
+<td align="left">DirectDownLoad</td>
+<td align="left">ddl.me</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">FilmPalast</td>
+<td align="left">filmpalast.to</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">FilmeStreamz</td>
+<td align="left">filme-streamz.com</td>
+<td align="left">funktioniert</td>
+<td align="left">29.07.2016</td>
+</tr>
+<tr>
+<td align="left">Goldstream</td>
+<td align="left">goldstream.org</td>
+<td align="left">funktioniert</td>
+<td align="left">23.06.2016</td>
+</tr>
+<tr>
+<td align="left">Gute Filme</td>
+<td align="left">gute-filme.to</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">HDfilme</td>
+<td align="left">hdfilme.tv</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">KinoX</td>
+<td align="left">kinox.to</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">KinoKiste</td>
+<td align="left">kkiste.to</td>
+<td align="left">funktioniert teilweise</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">Movie4k</td>
+<td align="left">movie4k.to</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">MoviesEver</td>
+<td align="left">moviesever.com</td>
+<td align="left">funktioniert teilweise</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">SeriesEver</td>
+<td align="left">seriesever.net</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+<tr>
+<td align="left">StreamTausch</td>
+<td align="left">streamtausch.tv</td>
+<td align="left">funktioniert</td>
+<td align="left">29.07.2016</td>
+</tr>
+<tr>
+<td align="left">SzeneStreams</td>
+<td align="left">szene-streams.com</td>
+<td align="left">funktioniert</td>
+<td align="left">09.04.2016</td>
+</tr>
+</tbody>
+</table>
+
+<p>Empfehlungen und Vorschläge für neue Seiten können über das <a href="http://xstream-addon.square7.ch">Forum</a> unter dem Bereich <a href="http://xstream-addon.square7.ch/forumdisplay.php?fid=9">Wünsche und Anregungen</a> angefragt bzw. eingestellt werden. Die Intergration der gewünschten Seiten ist nicht selbsverständlich und erfolgt nicht automatisch!
+Alle Vorschläge werden in der <a href="https://docs.google.com/spreadsheets/d/1b_9C6BONlpWcugMgocFbKxe7nFp99HfvVUJznxTzT4I/edit?usp=sharing">Site-Plugin Wunschliste</a> (<a href="http://xstream-addon.square7.ch/showthread.php?tid=663">Forumbeitrag</a>) gesammelt und auf ihren tatsächlichen Mehrwert untersucht. Daraufhin folgt bei den interessanten Content-Anbieter eine Priorisierung bzw. Entwicklung eines neuen Site-Plugins für xStream.
+Grundsätzlich ist jedoch zu betonen, dass stätig an der Weiterentwicklung von xStream und deren Site-Plugins gearbeitet wird.</p>
+
+<h3>
+<a id="12-rechtliche-konsequenzen-bei-nutzung" class="anchor" href="#12-rechtliche-konsequenzen-bei-nutzung" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.2 Rechtliche Konsequenzen bei Nutzung</h3>
+
+<p>Es ist festzuhalten, dass das Addon xStream lediglich die Nutzung eines bereits verfügbaren Angebotes an Streaminginhalten bestehender Webseiten  ermöglicht. Das bloße streamen von Medien kann in Deutschland aktuell weder als eindeutig legale oder illegale Handlung eingestuft werden und befindet sich somit in einer rechtlichen Grauzone. Vor Verwendung des Addons und dem damit verbundenen Inhalten ist die aktuelle rechtliche Situaltion im jeweiligen Land zu prüfen! </p>
+
+<p>Weiterhin ist zu erwähnen, dass ein großteil der Streaming-Plattfromen weder Nutzerverhalten noch Zugriffsdaten speichern. Jedoch ist dies im Einzelfall zu prüfen. </p>
+
+<p>Aufklärendes Video zum Thema Streaming von Rechtsanwalt Christian Solmecke:
+<a href="http://www.youtube.com/watch?v=cDmvhJrLkmM"><img src="http://img.youtube.com/vi/cDmvhJrLkmM/0.jpg" alt="Nutzerfragen: Legalität von Streaming, Arbeitszeiten und Bild.de | Rechtsanwalt Christian Solmecke"></a></p>
+
+<h2>
+<a id="2-installation-und-konfiguration" class="anchor" href="#2-installation-und-konfiguration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. Installation und Konfiguration</h2>
+
+<h3>
+<a id="21-bezugsquellen-zur-installation" class="anchor" href="#21-bezugsquellen-zur-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.1 Bezugsquellen zur Installation</h3>
+
+<p>Das Addon kann direkt über das xStream-Repository bezogen werden. Empfohlen wird die Installation dieser sogenanten Repo über das xStream-Forum.</p>
+
+<p>Alternativ könnte die xStream-Repository ebenfalls über das <em>SuperRepo</em> geladen werden. Bei <em>SuperRepo</em> handelt es sich um eine Ansammlung verschiedenster Addons, Skripte, Repos und Weiteres rund um Kodi.</p>
+
+<p><strong><em>WICHTIG:</em></strong>
+<em>Jedoch muss an dieser Stelle klar darauf hingewiesen werden, dass unter der alternativen Bezugsquelle nicht für den aktuellsten Stand der Software garantiert werden kann!</em></p>
+
+<p>xStream-Repository aus Forum:</p>
+
+<ul>
+<li><a href="http://xstream-addon.square7.ch/showthread.php?tid=1">xStream-Forum</a></li>
+</ul>
+
+<p>xStream-Repository aus SuperRepo:</p>
+
+<ul>
+<li><a href="https://superrepo.org/kodi/addon/repository.xstream/">SuperRepo</a></li>
+</ul>
+
+<p>GitHub:</p>
+
+<ul>
+<li><a href="https://github.com/Lynx187/xStreamRepo/archive/master.zip">Master-Branch bei GitHub</a></li>
+<li><a href="https://github.com/StoneOffStones/plugin.video.xstream/tree/beta">Beta-Branch bei GitHub</a></li>
+<li><a href="https://github.com/StoneOffStones/plugin.video.xstream/tree/nightly">Nightly-Branch bei GitHub</a></li>
+</ul>
+
+<p><strong><em>ACHTUNG:</em></strong> 
+<em>Die Beta und Nightly Versionen gelten als Experimentell und werden nicht offiziell unterstützt!</em></p>
+
+<p>Außerdem ist beim Download der Addon-Daten von Github gilt es folgendes zu Beachten: </p>
+
+<p>Um eine korrekte Installation zu gewährleisten ist es notwendig den jeweiligen Ordner in der heruntergeladenen Zip-Datei anzupassen. Dabei muss darauf geachtet werden, dass der enthaltene Ordner um Begriffe wie z.B. <em>Master, Beta, Nightly</em> gekürzt werden.</p>
+
+<p>Um den aktuellsten Beta- und Nightly-Versionen kann es durchaus erfordelich sein das neue noch nicht im System vorhandene fehlende Abhängigkeiten des Addons händisch nachinstallieren werden müssen.</p>
+
+<h3>
+<a id="22-allgemeine-einstellungen" class="anchor" href="#22-allgemeine-einstellungen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.2 Allgemeine Einstellungen</h3>
+
+<p>Das Addon kann prinzipiell mit den Grundeinstellungen, welche nach der Erstinstallation vorgefunden werden, ohne Bedenken verwendet werden.</p>
+
+<p>Unter der Auswahl der jeweiligen Sprache kann die jeweilig bevorzugte Sprache ausgewählt werden. Dabei kann unter den Optionen Deutsch, Englisch und Alle gewählt werden, wobei Alle beide Sprachen einbezieht. Zu berücksichtigen ist jedoch, dass die einzelnen Site-Plugins diese Option unterstützen müssen.
+Wird also die aufgezählte Option nicht unterstützt werden auch Inhalte anderer Sprache angezeigt.</p>
+
+<p>Ab xStream 2.2.0 gibt es in den Settings eine Auto-Update Funktion. Diese installiert automatisch Änderungen an Seiten usw., welche auf der Entwicklerplattform (Github) durchgeführt werden. Dadurch werden Fehler/Bugs/Error, schnell &amp; einfach behoben. Als Standard ist die Master zu verstehen, welche auch als Stable bezeichnet wird. Natürlich können auch die zuständigen Branches für die Entwicklung Beta bzw. Nightly ausgewählt werden. Jedoch ist für jegliche Entwicklerversion der Support bei auftretenden Fehlern bzw. Problemen ausgeschlossen und vom Entwicklungsteam nicht zu erwarten!</p>
+
+<h3>
+<a id="23-webseiten-aktivieren-und-deaktivieren" class="anchor" href="#23-webseiten-aktivieren-und-deaktivieren" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.3 Webseiten aktivieren und deaktivieren</h3>
+
+<p>In den Einstellungen, unter dem Menüpunkt <em>Site-Plugins</em>, besteht die Möglichkeit bestimmte Seiten an- bzw. auszuschalten. Dies kann von Nutzen sein, wenn kein Interesse an bestimmten Webseiten besteht. Diese werden dann auch nicht mehr in der globalen Suche angezeigt.</p>
+
+<h3>
+<a id="24-manuelle-und-automatische-hosterwahl" class="anchor" href="#24-manuelle-und-automatische-hosterwahl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.4 Manuelle und automatische Hosterwahl</h3>
+
+<p>Die Hosterwahl als solches ist sehr schlicht und einfach gehalten.
+Es erinnert stark an die eigentlichen Benuteroberflächen der jeweiligen Streaming-Seiten</p>
+
+<p>Wenn keine besonderen Wünsche bzw. keine entprechende Kenntisse im Bezug auf die Hosterauswahl vorhanden sind, kann die Automatische Hosterwahl verwednet werden. In dieser Einstellung werden darüber hinaus nicht funktionierende Hoster rausgefiltert. </p>
+
+<ul>
+<li><strong>Hosterliste prüfen und sortieren</strong></li>
+</ul>
+
+<p>Bei Aktivierung werden aus der Hosterliste alle nicht unterstützten Hoster entfernt und nach ihrer Priorität über die "Resolver Settings" sortiert.
+Die Deaktivierung diese Features kann auf leistungsschwachen System wie z.B. RespberryPi oder ähnliches kann einen spürbaren schnelleren Ablauf bewirken.</p>
+
+<h3>
+<a id="25-funktion-des-metahandlers" class="anchor" href="#25-funktion-des-metahandlers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.5 Funktion des Metahandlers</h3>
+
+<p>Bei Aktivierung wird das externe Modul "Metahandler" genutzt um ausführliche Informationen in form von Metadaten, wie Fanarts, Covers oder Episodenbilder, zu den Streams bereitzustellen.
+Darüber hinaus ermöglicht es eine relativ konsistente Verwendung der "gesehen" Markierung.</p>
+
+<p>Bei erstmaliger Verwendung dauern die Ladevorgänge deutlich länger. Dies liegt daran, dass  zunächst alle neuen Informationen zusätzlich über das Internet abgerufen werden müssen.
+Für schwache Systeme ist dieses Feature nur bedingt zu empfehlen und muss vom jeweiligen Site-Plugin unterstützt werden, ansonsten zeigt diese Option keine Funktion an.</p>
+
+<ul>
+<li><p><strong>Metahandler ersetzt Infos von Site</strong></p></li>
+<li><p>Bei Aktivierung werden Metainformationen vom  "Metahandler" bevorzugt. D.h. Metainformationen die von einem Site-Plugin geliefert wurden werden nicht nur ergänzt sondern auch ersetzt.</p></li>
+<li><p><strong><em>ACHTUNG:</em></strong> Da viele Seiten nicht sofort genug Informationen bereitstellen um jeden Film eindeutig zu identifizieren kann es vorkommen, dass alle angezeigten Informationen nicht zum tatsächlich verlinkten Film passen.</p></li>
+</ul>
+
+<h2>
+<a id="3-bekannte-probleme" class="anchor" href="#3-bekannte-probleme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. Bekannte Probleme</h2>
+
+<p>In diesem Kapitel wird auf mögliche Fehlermeldungen sowohl beim Installationsvorgang als auch im eigentlichen Betireb eingegangen. Darüber hinaus wird auch im Forum im Bereich <a href="http://xstream-addon.square7.ch/forumdisplay.php?fid=8">Support - Skriptfehler, Bugs, etc.</a> auf aktuelle Probelme eingegangen. Hervorzugheben sind die sogenannten wichtigen Themen, welche im Forum zuerst dargestellt werden und auf häufig gestellte Fragen (FAQs: Frequently Asked Questions) bzw. auf bereits bekannte Problematiken eingehen und den aktuellen Arbeitsstand dazu aufzeigen.</p>
+
+<ul>
+<li><p><a href="http://xstream-addon.square7.ch/showthread.php?tid=619">[Bugs] Bekannte Probleme</a></p></li>
+<li><p><a href="http://xstream-addon.square7.ch/showthread.php?tid=3">[FAQs] - Bugs, Scriptfehler, usw.</a></p></li>
+<li><p><a href="http://xstream-addon.square7.ch/showthread.php?tid=2">[FAQs] - Einstellungen</a></p></li>
+</ul>
+
+<h3>
+<a id="31-fehler-bei-der-installation" class="anchor" href="#31-fehler-bei-der-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.1 Fehler bei der Installation</h3>
+
+<p>Fehler können verschiedene Ursachen haben. Bei Hilfe bitte immer folgendes bekannt geben:
+Log, Kodi Version, Betriebssystem, xStream Version, genaue Fehlerbeschreibung!
+Wird die aktuelle 2.1.16 Beta installiert, ist es vorher notwendig das script.modul "Cryptopy" zu installieren und vor dem Entpacken den Zusatz <em>-master</em> aus der .zip entfernen::</p>
+
+<ul>
+<li><a href="https://github.com/StoneOffStones/script.module.cryptopy/archive/master.zip">https://github.com/StoneOffStones/script.module.cryptopy/archive/master.zip</a></li>
+</ul>
+
+<p><strong>WICHTIG:</strong> Erst lesen, dann fragen! Bitte kontrollieren, ob der Fehler in einem früheren Post schon beantwortet wurde!
+Es kann auch eine fehlerhafte Datei vorliegen, oder die .zip ist falsch aufbereitet.</p>
+
+<h3>
+<a id="32-fehler-bei-verwendung-der-globalen-suche" class="anchor" href="#32-fehler-bei-verwendung-der-globalen-suche" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.2 Fehler bei Verwendung der Globalen Suche</h3>
+
+<p>Falls bei der Globalen Suche eine Fehlermeldung aufkommt, dass eine Seite nicht erreichbar ist bzw. die Suche durch eine Meldung unterbrochen wurde, liegt dies meist an der eigentlichen Ereichbarkeit der Webseite. Dagegen meist nicht viel mehr getan werden als abzuwarten bis die Probleme der Seite behoben sind und diese wieder online verfügbar ist.</p>
+
+<p>Wenn von der Globalen Suche keine Treffer angezeigt werden, dann bitte die Suche in der gewünschten Seite nutzen. Um schnelle Abhilfe zu leisten lohnt es sich in diesem Fall durchaus die Entwicklergemeinde darauf aufmerksam zu machen.</p>
+
+<h3>
+<a id="33-fehler-bei-verwendung-einzelner-webseiten" class="anchor" href="#33-fehler-bei-verwendung-einzelner-webseiten" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.3 Fehler bei Verwendung einzelner Webseiten</h3>
+
+<p>Dieser Fehler kann verschiedene Ursachen haben. Meistens liegt es jedoch an der eigentlichen Webseite.
+Denn wenn dort Anpassungen vorgenommen werden kann unter Umständen bereits die Funktion des Site-Plugin in xStream gestört sein.
+Im Regelfall sind die Entwickler informiert und arbeiten an einer Lösung. Bitte fortbestand bitte sachlich bleiben und Ruhe bewahren!
+Falls noch nicht bekannt dann bitte die Seite im Browser aufrufen, auf Funktion überprüfen und im Anschluss das Problem über das Forum oder direkt bei GitHub schildern.</p>
+
+<p><em>Für die Streaming-Seiten kinox.to und movie4k.to können in den Einstellungen alternative Domäne bestimmt werden. Nutzen sie diese falls die Seiten nicht zu erreichen sind!</em></p>
+
+<h3>
+<a id="34-fehler-bei-verwendung-einiger-hoster" class="anchor" href="#34-fehler-bei-verwendung-einiger-hoster" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.4 Fehler bei Verwendung einiger Hoster</h3>
+
+<p>Sollte dies der Fall sein, bitte ggf. eine aktuellere Version des "URLResolver" über eine der folgenden Bezugsquellen beziehen:</p>
+
+<ul>
+<li><p>TVA Repo, kann über das offizielle xStream-Repo installiert werden</p></li>
+<li><p><a href="https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/script.module.urlresolver/">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/script.module.urlresolver/</a></p></li>
+</ul>
+
+<p>Bitte den gewünschten Film auf der Homepage erneut auf Funktion prüfen.</p>
+
+<h2>
+<a id="4-fehlerbericht-über-log-datei" class="anchor" href="#4-fehlerbericht-%C3%BCber-log-datei" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. Fehlerbericht über Log-Datei</h2>
+
+<h3>
+<a id="41-allgemeines-zur-log-datei" class="anchor" href="#41-allgemeines-zur-log-datei" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.1 Allgemeines zur Log-Datei</h3>
+
+<p>In der sogenannten Log-Datei werden alle Aktivitäten bzw. Programmabläufe von Kodi protokolliert und gespeichert. Wenn nun ein Problem bei der Verwendung von Kodi oder dessen Addons auftritt ist es notwednig, dass diese Log-Dati bei entsprechender Meldung übermittelt wird. Dabei ist egal ob die Kommunikation im xStream-Forum oder auf anderen Kanälen wie z.B. GitHub, stattfindet. Nur so kann eine schnelle und Zielgerichtete Lösung erfolgen, ist dieses Protokoll kann ebenfalls die unterschtützung untersagt werden!</p>
+
+<h3>
+<a id="42-erstellen-bearbeiten-und-hochladen-der-log-datei" class="anchor" href="#42-erstellen-bearbeiten-und-hochladen-der-log-datei" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.2 Erstellen, bearbeiten und hochladen der Log-Datei</h3>
+
+<p><strong>Erstellen / Hochladen:</strong></p>
+
+<p>Kodi hat standardmäßig die Addons zur Erstellung und Bereitstellung der Log-Dateien integriert. Damit ist das Erstellen und Posten der Log-Datei und im Forum sehr viel einfacher.</p>
+
+<p>In Kodi wie folgt vorgehen:</p>
+
+<ol>
+<li>Desktop-Optionen</li>
+<li>Einstellungen</li>
+<li>Addons</li>
+<li>Suche</li>
+</ol>
+
+<p>Den Begriff "log" in das Suchfeld eingeben, bestätigen und anschließend folgende Addons auswählen und installieren:</p>
+
+<ul>
+<li>Log-Viewer für Kodi (nur zum Lesen der Log-Datei)</li>
+<li>Kodi-Log-Uploader (zum Auslesen &amp; Uploaden der Log-Datei)</li>
+</ul>
+
+<p>Mit dem "Log-Viewer" kann man die Log-Datei ansehen, mit dem "Kodi-Log-Uploadeder" die Log-Datei auf <a href="http://xbmclogs.com">http://xbmclogs.com</a> hochladen.
+Bei der Installation eine E-Mail Adresse angeben. An diese wird dir dann nach dem "Kodi-Log-Uploadeder" ein Link zur Log Datei geschickt.
+Diesen Link im Forum Posten oder alles in einen Texteditor koperien, die Datei speicherun und im Forum hochladen.</p>
+
+<p><strong>Bearbeiten:</strong></p>
+
+<p>Die Log-Datei kann unter Windows z.B. mit der Software "Notepad++" oder "gedit" unter Linux betrachtet werden.
+Auch der normale Texteditor unter Windows funktioniert, auch wenn nicht ganz so übersichtlich.
+Auf Android einen beliebigen Texteditor verwenden zum Betrachten.
+Das Notepad++ weist zum Texteditor einige Vorteile auf. Es werden so z.B. die Zeilen nummärisch angezeigt, somit ist die ganze Darstellung übersichtlicher gestalltet. Außerdem können mit dem Notepad++ .py Datei sofort geöffnet und wieder gespeichert werden.</p>
+
+<p><strong>Debug-Logging:</strong></p>
+
+<p>Eventuell ist es sinnvoll das "Debug-Logging" in Kodi zu aktivieren um noch mehr Informationen zu erhalten.</p>
+
+<p>Folgendes Ausführen:</p>
+
+<ol>
+<li>Einstellungen</li>
+<li>System</li>
+<li>Debugging</li>
+<li>"Debug-Logging aktivieren" anklicken</li>
+</ol>
+
+<p>Nun wird am oberen Rand eine Statuszeile eingeblendet mit Infos. <strong>Hier ist auch der Speicherort der Log-Datei zu sehen!</strong></p>
+
+<p>Starte Kodi neu und öffne das Addon welches einen Fehler verursacht. Erstelle anschließend umgehend eine Log-Datei um den Fehler leichter ausfindich machen zu können.</p>
+
+<p>Falls nicht mehr benötigt kann das "Debug-Logging" im Anschluss wieder in den Einstellungen deaktiviert werden.</p>
+
+<p>Unter dem Punkt Komponentenspezifische Protokollierung kann man bei der Kategorie "Konfiguration der Komponentenspezifischen Protokollierung" noch Einstellen was alles im Debug-Log Protokolliert werden soll.</p>
+
+<h3>
+<a id="43-speicherort-der-log-datei" class="anchor" href="#43-speicherort-der-log-datei" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4.3 Speicherort der Log Datei</h3>
+
+<p>Den Speicherpfad von Kodi anzeigen lassen – runter scrollen zum Punkt "Debug_Loggin" und folgenden Beschreibungen.</p>
+
+<p>Pfad ist vom verwedneten Betriebssystem abhängig.
+Im Folgenden werden Ordnerstrukturen der jeweiligen Betriebssysteme aufgelistet. Anstelle von "xbmc" kann in den Ordnern auch "kodi" stehen hinzu kommt, dass die Ordnerstruktur auch leicht den aufgeführten abweichen kann:</p>
+
+<ul>
+<li>Windows XP
+
+<ul>
+<li><code>Documents and Settings\&lt;your_user_name&gt;\Application Data\Kodi</code></li>
+</ul>
+</li>
+<li>Vista/Windows 7
+
+<ul>
+<li><code>C:\Users\&lt;your_user_name&gt;/%APPDATA%/Roaming/Kodi/Kodi.log</code></li>
+</ul>
+</li>
+<li>Mac OS X
+
+<ul>
+<li><code>/Users/&lt;username&gt;/Library/Logs/ oder</code></li>
+<li><code>/Users/&lt;your_user_name&gt;/Library/Application Support/Kodi/userdata</code></li>
+</ul>
+</li>
+<li>iOS
+
+<ul>
+<li><code>/private/var/mobile/Library/Preferences</code></li>
+</ul>
+</li>
+<li>Linux, OpenElec, Raspberry Pi 1-3
+
+<ul>
+<li><code>$HOME/.kodi/temp/</code></li>
+<li><code>$HOME/.kodi/userdata/temp/xbmc.log</code></li>
+<li><code>$HOME/.kodi/userdata</code></li>
+</ul>
+</li>
+<li>Android
+
+<ul>
+<li><code>/android/data/org.xbmc.Kodi/files/.kodi/temp</code></li>
+<li><code>data/data/org.xbmc.Kodi/cache/temp</code></li>
+</ul>
+</li>
+</ul>
+
+<p><strong>WICHTIG:</strong> Die Ordner sind meist versteckt und müssen erst sichtbar gemacht werden. Bei Windows kann dies über den Explorer und auf Android Systemen mit dem ESDateiexplorer eingestellt werden.</p>
+
+<p>Die in Kodi als „log.old“ bezeichnete Datei ist die Log-Datei vom letzten Neustart bzw. Absturz. Wenn somit kein aktuelleres Protokoll vorhanden ist sollte diese zur Problemfindung benutzt werden.</p>
+
+<h2>
+<a id="5-phyton-dateien" class="anchor" href="#5-phyton-dateien" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5. Phyton Dateien</h2>
+
+<h3>
+<a id="51-allgemeines-zur-py-datei" class="anchor" href="#51-allgemeines-zur-py-datei" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5.1 Allgemeines zur .py-Datei</h3>
+
+<p>Eine .py Datei ist im eigentlichen Sinne eine Textdatei. Dabei verweist die Dateiendung .py auf die eigentliche Programmiersprache namens Python, welche in Kodi bzw. dessen Addons häufig zur Anwendung kommt.</p>
+
+<h3>
+<a id="52-bearbeiten-einer-py-datei" class="anchor" href="#52-bearbeiten-einer-py-datei" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5.2 Bearbeiten einer .py-Datei</h3>
+
+<p>Wenn der User aufgefordert wird die .py Datei zu wechseln, diese in einem explizieten Ordner zu verschieben bzw. zu kopieren eine bestimmte Zeile innerhalb der Datei zu ändern ist damit ein händisches Anpassen der Position bzw. des Inhaltes gemeint. Bearbeitet werden können diese Dateien mit Programmen wie z.B. Notepad++ oder dem standatdmäßg installierten Texteditor, wie bereits in Kapitel 4.3 aufgezeigt.</p>
+
+<p>Bei Verwendung des Texteditors muss die Endung zuvor von .py auf .txt geändert werden. Anschließend kann die Datei geöffnet und Änderungen vorgenommen werden. Beim Beendigung der Anpassung die Datei über „Speichern unter“ absichern, unter „Dateityp“ alle auswählen und wieder als .py Datei abspeichern.</p>
+
+<h3>
+<a id="53-speicherort-der-einzelnen-webseiten" class="anchor" href="#53-speicherort-der-einzelnen-webseiten" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5.3 Speicherort der einzelnen Webseiten</h3>
+
+<p>In folgenden Ordnern sind die Kodi-Addons abgelegt:</p>
+
+<ul>
+<li>Android 
+
+<ul>
+<li><code>/Android/data/org.xbmc.kodi/files/.kodi/addons/</code></li>
+<li>
+<code>/sdcard/Android/data/org.xbmc.kodi/files/.kodi/addons/</code>  (.kodi ist ein versteckter Ordner)</li>
+</ul>
+</li>
+<li>iOS
+
+<ul>
+<li><code>/private/var/mobile/Library/Preferences/Kodi/addons/</code></li>
+</ul>
+</li>
+<li>Linux 
+
+<ul>
+<li><code>~/.kodi/addons/</code></li>
+</ul>
+</li>
+<li>Mac 
+
+<ul>
+<li><code>/Users/&lt;your_user_name&gt;/Library/Application Support/Kodi/addons/</code></li>
+</ul>
+</li>
+<li>OpenELEC 
+
+<ul>
+<li><code>/storage/.kodi/addons/</code></li>
+</ul>
+</li>
+<li>Windows
+
+<ul>
+<li>
+<code>C:\Users\BENUTZERNAME\AppData\Roaming\Kodi\addons</code>    (AppData ist ein versteckter Ordner)</li>
+</ul>
+</li>
+</ul>
+
+<p>Das Addon xStream wird in aller Regel unter plugin.video.xstream istalliert.
+Im Verzeichnis <code>sites/</code> sind die .py Daten und im Ordner <code>resources/art/sites/</code> die jeweiligen Artworks bzw. Site-Icons der einzelnen Webseiten abgelegt.</p>
+        </section>
+
+        <footer>
+          xStream is maintained by <a href="https://github.com/StoneOffStones">StoneOffStones</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
